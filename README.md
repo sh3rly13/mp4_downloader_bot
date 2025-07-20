@@ -22,9 +22,23 @@ git clone https://github.com/sh3rly13/mp4_downloader_bot.git
 pip install python-telegram-bot yt-dlp
 ```
 
-3. FFmpeg'i yükleyin:
-   - Windows: [FFmpeg İndirme Sayfası](https://ffmpeg.org/download.html)
-   - Linux: `sudo apt-get install ffmpeg`
+3. FFmpeg'i yükleyin ve PATH'e ekleyin:
+   - Windows için:
+     1. [FFmpeg İndirme Sayfası](https://ffmpeg.org/download.html)'ndan FFmpeg'i indirin
+     2. İndirilen zip dosyasını çıkartın (örn: `C:\ffmpeg`)
+     3. Sistem PATH'ine FFmpeg'i ekleyin:
+        - Windows arama çubuğuna "Ortam Değişkenleri" yazın
+        - "Sistem Ortam Değişkenlerini Düzenle"yi seçin
+        - "Ortam Değişkenleri" butonuna tıklayın
+        - "Sistem değişkenleri" altında "Path" seçin ve "Düzenle"ye tıklayın
+        - "Yeni" butonuna tıklayıp FFmpeg'in bin klasörünü ekleyin (örn: `C:\ffmpeg\bin`)
+        - Tüm pencereleri "Tamam" diyerek kapatın
+        - Değişikliklerin etkili olması için bilgisayarı yeniden başlatın
+   - Linux için:
+     ```bash
+     sudo apt-get install ffmpeg
+     ```
+     Linux'ta otomatik olarak PATH'e eklenir
 
 4. Bot token'ınızı ayarlayın:
    - `moonyDownloadBot.py` dosyasındaki `TOKEN` değişkenini kendi bot token'ınızla değiştirin

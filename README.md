@@ -34,6 +34,26 @@ pip install python-telegram-bot yt-dlp
         - "Yeni" butonuna tıklayıp FFmpeg'in bin klasörünü ekleyin (örn: `C:\ffmpeg\bin`)
         - Tüm pencereleri "Tamam" diyerek kapatın
         - Değişikliklerin etkili olması için bilgisayarı yeniden başlatın
+   
+   - Mac için:
+     1. Homebrew kullanarak (önerilen yöntem):
+        ```bash
+        # Önce Homebrew'i kurun (kurulu değilse)
+        /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+        
+        # FFmpeg'i yükleyin
+        brew install ffmpeg
+        ```
+     2. Manuel kurulum için:
+        - [FFmpeg İndirme Sayfası](https://ffmpeg.org/download.html)'ndan Mac için derlenmiş sürümü indirin
+        - İndirilen dosyayı çıkartın
+        - Terminal'i açın ve şu komutları çalıştırın:
+          ```bash
+          sudo mkdir -p /usr/local/bin
+          sudo mv /yol/ffmpeg /usr/local/bin/
+          sudo chmod +x /usr/local/bin/ffmpeg
+          ```
+   
    - Linux için:
      ```bash
      sudo apt-get install ffmpeg
